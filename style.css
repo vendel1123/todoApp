@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    background-color: #DC3545;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 75%;
+
+}
+
+.focim {
+    text-align: center;
+    color: white;
+}
+
+.tema {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.szinek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#zold {
+    background-color: #28A745;
+    transition: ease 0.2s;
+}
+
+#kek {
+    background-color: #007BFF;
+    transition: ease 0.2s;
+}
+
+#piros {
+    background-color: #DC3545;
+    transition: ease 0.2s;
+}
+
+#sarga {
+    background-color: #FFC107;
+    transition: ease 0.2s;
+}
+
+#kek, #zold, #piros, #sarga {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#kek:hover, #zold:hover, #piros:hover, #sarga:hover {
+    transform: scale(1.1);
+}
+
+#gomb {
+    height: 50px;
+    width: 200px;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+#gomb:hover {
+    transform: scale(1.05);
+    background-color: silver;
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+#szoveg {
+    height: 50px;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    font-size: 1.5rem;
+    outline: none;
+    text-indent: 0.5rem;
+}
+
+.gorget {
+    display: flex;
+    width: 100%;
+    max-height: 75vh;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* JS-ből előállított div-ek osztályai */
+.lista {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.torles {
+    background-color: #DC3545;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.torles:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 640px){
+    .tema{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .gomb{
+        width: 100%;
+        text-align: center;
+    }
+}
